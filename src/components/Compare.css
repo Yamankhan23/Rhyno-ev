@@ -1,0 +1,88 @@
+/* General container for the comparison section */
+.compare-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #F2F2F2; /* Consistent with project color scheme */
+}
+
+/* Title of the comparison section */
+.compare-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #3C3C3C; /* Adjusted for better readability */
+  margin-bottom: 20px;
+}
+
+/* Container for individual product cards */
+.compare-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+/* Style for each product card */
+.compare-card {
+  background-color: #FFFFFF; /* Consistent with project color scheme */
+  border: 1px solid #DDDDDD; /* Light border for subtle contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.compare-card:hover {
+  transform: scale(1.05);
+}
+
+.compare-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.compare-card h3 {
+  font-family: 'Lato', sans-serif;
+  color: #3C3C3C; /* Consistent with title color */
+  margin: 15px 0;
+}
+
+.compare-card p {
+  font-family: 'Calibri', sans-serif;
+  color: #666666; /* Adjusted for readability */
+  margin: 10px 0;
+}
+
+/* Comparison table */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compare-table th,
+.compare-table td {
+  border: 1px solid #DDDDDD; /* Light border for table cells */
+  padding: 10px;
+  text-align: center;
+}
+
+.compare-table th {
+  background-color: #F9F9F9; /* Light background for table headers */
+  color: #333333; /* Darker color for contrast */
+}
+
+.compare-table td {
+  background-color: #FFFFFF; /* Consistent with card background */
+}
+
+.compare-table caption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #3C3C3C; /* Consistent with title color */
+}

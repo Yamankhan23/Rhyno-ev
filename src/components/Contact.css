@@ -1,0 +1,42 @@
+.contact {
+  background-color: #F2F2F2; /* Consistent with the project’s color scheme */
+  padding: 40px 20px;
+  font-family: 'Lato', sans-serif; /* Consistent font for overall look */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px; /* Center the form and set a max width */
+  margin: 0 auto; /* Center the form */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #252525; /* Border color for consistency */
+  border-radius: 4px; /* Rounded corners for inputs */
+  font-family: 'Lato', sans-serif; /* Consistent font */
+  width: 100%; /* Ensure inputs take full width */
+}
+
+.contact-form textarea {
+  resize: vertical; /* Allow vertical resizing only */
+  min-height: 150px; /* Set a minimum height for the textarea */
+}
+
+.contact-form button {
+  background-color: #F9ED32; /* Highlight color for the button */
+  color: #252525; /* Text color for the button */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px; /* Rounded corners for button */
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-form button:hover {
+  background-color: #FFF225; /* Slightly different shade on hover */
+}

@@ -1,0 +1,74 @@
+/* Carousel container styling */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your design */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Carousel items */
+  .carousel-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Image styling within carousel items */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Carousel caption styling */
+  .carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff; /* White text color */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px; /* Adjust based on your design */
+  }
+  
+  /* Carousel navigation (optional) */
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Navigation button hover effect */
+  .carousel-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Additional styling for the carousel container */
+  .carousel-container {
+    position: relative;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  

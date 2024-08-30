@@ -1,13 +1,52 @@
+/* Base Styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #1a1a1a; /* Dark grey/black background */
+  color: #ffffff; /* White text */
+  font-family: 'Lato', 'Poppins', 'Calibri', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Link Styles */
+a {
+  color: #FFD700; /* Yellow for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff; /* White text on hover */
+  text-decoration: underline;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: #cccccc; /* Light grey for paragraph text */
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
 }
