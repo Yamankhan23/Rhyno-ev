@@ -1,41 +1,67 @@
+/* Footer styles */
 .footer {
   background-color: #131313; /* Dark background for contrast */
-  padding: 40px;
-  text-align: center;
+  padding: 40px 20px; /* Adjust padding */
   color: #EDEDED; /* Light text color */
   font-family: 'Calibri', sans-serif; /* Consistent font */
+  text-align: center;
+  box-sizing: border-box; /* Include padding in width */
+  width: 100%; /* Full width */
+  max-width: 100vw; /* Prevent overflow */
 }
 
+/* Footer links */
 .footer-links {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  justify-content: center; /* Center links */
+  gap: 25px; /* Space between links */
 }
 
 .footer-links a {
   color: #FFF225; /* Highlight color for links */
   text-decoration: none;
+  font-size: 1rem; /* Adjust font size */
 }
 
 .footer-links a:hover {
   color: #F9ED32; /* Lighter color on hover */
 }
 
+/* Social icons */
 .social-icons {
   margin-top: 20px;
+  display: flex; /* Align icons horizontally */
+  justify-content: center; /* Center icons */
+  gap: 15px; /* Space between icons */
 }
 
 .social-icons a {
-  color: #FFF225; /* Consistent highlight color for social icons */
-  margin: 0 10px;
-  font-size: 1.5rem; /* Larger icons for better visibility */
+  color: #FFF225; /* Consistent highlight color */
+  font-size: 1.2rem; /* Adjust icon size */
   transition: color 0.3s; /* Smooth color transition */
 }
 
 .social-icons a:hover {
   color: #F9ED32; /* Lighter color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack logo and nav vertically on smaller screens */
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    gap: 10px; /* Reduce gap for mobile */
+  }
+
+  .footer-links {
+    flex-direction: column; /* Stack footer links vertically on smaller screens */
+  }
 }

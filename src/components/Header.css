@@ -1,80 +1,165 @@
 /* General header styles */
-header {
-  background-color: #252525; /* Dark background */
-  padding: 10px 20px;
-  color: #FFF225; /* Highlight color for text */
-  font-family: 'Poppins', sans-serif; /* Consistent font */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  background-color: #333; /* Example background color */
+  color: #FFF;
+}
+
+.logo a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav a {
+  color: #FFF;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  color: #FFF;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #FFD700; /* Hover color for social icons */
+}
+
+header {
+  background-color: #252525;
+  padding: 10px 20px;
+  color: #FFF225;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #FFF225;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
 }
 
 /* Navigation styles */
+nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Align links horizontally */
-  gap: 20px; /* Space between each link */
-  justify-content: flex-end; /* Align navigation to the right */
-  align-items: center; /* Center the links vertically */
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li {
-  position: relative; /* For dropdown positioning if needed */
+  position: relative;
 }
 
 nav a {
-  color: #FFF225; /* Link color */
+  color: #FFF225;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
 }
 
 nav a:hover {
-  color: #F9ED32; /* Lighter color on hover */
+  color: #F9ED32;
 }
 
-/* Dropdown styles (if you have dropdowns) */
-nav ul ul {
-  display: none; /* Hide dropdowns by default */
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #2C2A2A; /* Dark background for dropdown */
+  background-color: #2C2A2A;
   padding: 10px 0;
   list-style: none;
+  min-width: 150px;
+  z-index: 1000;
 }
 
-nav ul li:hover > ul {
-  display: block; /* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-nav ul ul li {
+.dropdown-content li {
   padding: 5px 20px;
 }
 
-nav ul ul a {
+.dropdown-content a {
   padding: 5px 20px;
-  color: #EDEDED; /* Light color for dropdown links */
+  color: #EDEDED;
 }
 
-nav ul ul a:hover {
-  color: #F9ED32; /* Lighter color on hover */
+.dropdown-content a:hover {
+  color: #F9ED32;
 }
 
-/* Social icons (if you still want to keep them) */
+/* Social icons */
 .social-icons {
-  display: flex; /* Align icons horizontally */
-  gap: 15px; /* Space between each icon */
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 15px;
 }
 
-.social-icons a {
-  color: #FFF225; /* Highlight color */
-  font-size: 1.5rem; /* Larger icons for better visibility */
+.social-icon {
+  color: #FFF225;
+  margin: 0 10px;
+  font-size: 1.5rem;
   text-decoration: none;
+  position: relative; /* Allow adjustment using position properties */
+  top: -6px; /* Adjust this value to move icons up or down */
+  /* or use transform for finer control */
+  /* transform: translateY(-2px); */
 }
 
-.social-icons a:hover {
-  color: #F9ED32; /* Lighter color on hover */
+.social-icon:hover {
+  color: #FFD700;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
 }

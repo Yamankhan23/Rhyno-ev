@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom/client'; // Use createRoot from 'react-dom/clien
 import { BrowserRouter } from 'react-router-dom';
 import './index.css'; // Custom global styles
 import App from './App'; // Main application component
+import './App.css';
 import reportWebVitals from './reportWebVitals'; // Optional performance reporting
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 // Create the root element
 const root = ReactDOM.createRoot(document.getElementById('root'));

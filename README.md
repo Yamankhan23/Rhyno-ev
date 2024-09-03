@@ -1,74 +1,50 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Rhyno EV Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Rhyno EV website! This project showcases our range of electric vehicles, including the SE03 Lite, SE03, SE03 Max, and more. It features a responsive design, product comparisons, and various sections like About Us, Contact Us, and Pre-booking.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+- `src/`
+  - `components/`
+    - `Header.js` - Navigation header component.
+    - `Footer.js` - Footer component.
+    - `Home.js` - Home page component.
+    - `SE03-Lite.js` - SE03 Lite product page component.
+    - `SE03.js` - SE03 product page component.
+    - `SE03-Max.js` - SE03 Max product page component.
+    - `Comparison.js` - Product comparison page component.
+    - `About.js` - About Us page component.
+    - `Contact.js` - Contact Us page component.
+    - `PreBook.js` - Pre-booking page component.
+    - `Rentals.js` - Rentals page component.
+  - `App.js` - Main application component with routing.
+  - `index.js` - Entry point for the React application.
+  - `Product.css` - Shared styles for product pages.
+  - `index.css` - Global styles.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive Design**: The website is optimized for various screen sizes.
+- **Product Pages**: Detailed pages for SE03 Lite, SE03, and SE03 Max.
+- **Product Comparison**: Compare different electric vehicle models.
+- **Navigation**: Easy access to all main sections including About Us, Contact Us, Pre-booking, and Rentals.
+- **Theming**: Dark mode with contrasting colors for readability.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# my-app
->>>>>>> c91b1b06654b3e2a908d69eb38b8a8c2d6f7ea70
+install dependencies 
+npm install 
+npm start

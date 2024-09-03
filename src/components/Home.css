@@ -1,74 +1,149 @@
-/* Carousel container styling */
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 1200px; /* Adjust based on your design */
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 10px; /* Rounded corners */
+/* Home Page Styling */
+.home {
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  background-color: #2C2A2A;
+  color: #F5F5F5; /* Light color for text */
+}
+
+/* Hero Image Styling */
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Title Section Styling */
+.home-title-section {
+  margin: 20px 0;
+}
+
+.home-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #FFD700; /* Eye-catching color */
+  margin: 0;
+  font-weight: bold; /* Make text bold */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle shadow for better readability */
+}
+
+/* Carousel Container Styling */
+.usp-carousel {
+  padding: 0; /* Removed padding */
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  height: 550px; /* Fixed height */
+  width: 300px; /* Fixed width */
+  margin: 0 auto; /* Center the carousel */
+}
+
+/* Carousel becomes visible and expands when scrolled */
+.usp-carousel.show {
+  opacity: 1;
+}
+
+/* Carousel Image Styling */
+.usp-carousel .carousel-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  object-fit: cover; /* Ensure the image covers the container */
+  object-position: center; /* Center the image */
+}
+
+/* Carousel Arrow Styling */
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: #FFD700;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Increased z-index */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.slick-prev {
+  left: -10px; /* Adjust position from the left */
+}
+
+.slick-next {
+  right: -10px; /* Adjust position from the right */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+}
+
+.slick-prev:after {
+  content: '←';
+  font-size: 24px;
+  color: #FFD700;
+}
+
+.slick-next:after {
+  content: '→';
+  font-size: 24px;
+  color: #FFD700;
+}
+
+/* Call to Action Buttons */
+.cta-buttons {
+  margin: 20px auto;
+  /* Ensure there is no extra space below */
+}
+
+.pre-book-btn,
+.product-checkout-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: #1a1a1a;
+  background-color: #ffcc00;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.pre-book-btn:hover,
+.product-checkout-btn:hover {
+  background-color: #FFCC00;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .usp-carousel {
+    height: 60vh; /* Adjust height for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
   }
-  
-  /* Carousel items */
-  .carousel-item {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+@media (max-width: 480px) {
+  .usp-carousel {
+    height: 50vh; /* Further adjust height for very small screens */
+    width: 90%; /* Adjust width for very small screens */
   }
-  
-  /* Image styling within carousel items */
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.5s ease;
-  }
-  
-  /* Carousel caption styling */
-  .carousel-caption {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #fff; /* White text color */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    padding: 15px;
-    border-radius: 5px;
-    width: 90%;
-    max-width: 600px; /* Adjust based on your design */
-  }
-  
-  /* Carousel navigation (optional) */
-  .carousel-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-  }
-  
-  .carousel-nav button {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 20px;
-    transition: background-color 0.3s;
-  }
-  
-  /* Navigation button hover effect */
-  .carousel-nav button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Additional styling for the carousel container */
-  .carousel-container {
-    position: relative;
-    margin-bottom: 20px; /* Adjust spacing as needed */
-  }
-  
+}

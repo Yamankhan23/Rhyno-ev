@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'; 
+import { FaInstagram, FaLinkedin } from 'react-icons/fa'; // Correct import
 
 const Footer = () => (
   <footer className="footer">
@@ -9,11 +10,17 @@ const Footer = () => (
       <li><a href="/website-policy">Website Policy</a></li>
       <li><a href="/contact">Contact Us</a></li>
       <li><a href="/products">Products</a></li>
-      <li><a href="https://linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer">Career</a></li>
+      <li><a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank" rel="noopener noreferrer">Career</a></li>
       <li><a href="/rentals">Rentals</a></li>
-      <li><a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-      <li><a href="https://linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
     </ul>
+    <div className="social-icons">
+      <a href="https://www.instagram.com/rhyno.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <FaInstagram />
+      </a>
+      <a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <FaLinkedin />
+      </a>
+    </div>
   </footer>
 );
 

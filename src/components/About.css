@@ -1,20 +1,25 @@
+/* General About Us Page Styles */
 .about {
-  background-color: #F2F2F2;
-  padding: 40px 20px;
-  color: #252525;
-  font-family: 'Lato', sans-serif;
+  padding: 40px 20px; /* Spacing around the content */
+  color: #252525; /* Dark text color for readability */
+  font-family: 'Lato', sans-serif; /* Base font */
+  border: none !important /* Ensure no border is applied */
 }
 
+/* Heading Styles */
 .about-heading {
-  font-size: 36px;
-  font-family: 'Poppins', sans-serif;
-  color: #3C3C3C;
-  text-align: center;
+  font-size: 36px; /* Large font size for prominence */
+  font-family: 'Poppins', sans-serif; /* Consistent heading font */
+  color: #3C3C3C; /* Darker gray color for the heading */
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 20px; /* Space below the heading */
 }
 
+/* Text Styles */
 .about-text {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-top: 20px;
-  text-align: justify;
+  font-size: 18px; /* Adequate font size for body text */
+  line-height: 1.8; /* Improved line spacing for readability */
+  margin-top: 20px; /* Space above the text block */
+  text-align: justify; /* Justify text alignment */
+  color: #333; /* Darker color for better contrast */
 }
